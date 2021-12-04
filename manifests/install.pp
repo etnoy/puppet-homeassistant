@@ -46,6 +46,7 @@ class homeassistant::install (
     virtualenv => $home,
     owner      => 'homeassistant',
     group      => 'homeassistant',
+    notify     => Service['homeassistant'],
   }
   systemd::unit_file { 'homeassistant.service':
     content => template("${module_name}/homeassistant.service.erb"),
