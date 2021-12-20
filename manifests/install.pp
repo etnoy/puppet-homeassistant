@@ -37,7 +37,7 @@ class homeassistant::install (
 
   python::pyvenv { $home:
     ensure => present,
-    version = '3.10',
+    version => '3.10',
     owner  => 'homeassistant',
     group  => 'homeassistant',
   }
