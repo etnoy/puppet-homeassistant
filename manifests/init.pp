@@ -9,6 +9,7 @@ class homeassistant (
   Stdlib::Absolutepath $home   = '/srv/homeassistant',
   Stdlib::Absolutepath $confdir = '/etc/homeassistant',
   Boolean $known_devices_replace = false,
+  Optional[String] $currency = undef,
   String $version = 'present',
 ) {
   class { 'homeassistant::install': }

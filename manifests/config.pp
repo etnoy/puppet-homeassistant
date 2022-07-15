@@ -5,6 +5,7 @@ class homeassistant::config (
   $unit_system   = $homeassistant::unit_system,
   $time_zone     = $homeassistant::time_zone,
   $confdir       = $homeassistant::confdir,
+  $currency      = $homeassistant::currency,
   $known_devices = $homeassistant::known_devices,
   $known_devices_replace = $homeassistant::known_devices_replace,
 ) inherits homeassistant {
